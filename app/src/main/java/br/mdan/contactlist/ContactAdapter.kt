@@ -3,6 +3,8 @@ package br.mdan.contactlist
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageView
+import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 
 class ContactAdapter : RecyclerView.Adapter<ContactAdapter.ContactAdapterViewHolder>() {
@@ -22,9 +24,20 @@ class ContactAdapter : RecyclerView.Adapter<ContactAdapter.ContactAdapterViewHol
         holder.bind(list[position])
     }
 
-    class ContactAdapterViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
-        fun bind(contact: Contact) {
+    fun updateList(list: List<Contact>) {
+        this.list.clear()
+        this.list.addAll(list)
+        notifyDataSetChanged()
+    }
 
+    class ContactAdapterViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
+        private val tvNome: TextView = itemView.findViewById(R.id.tvName)
+        private val tvFone: TextView = itemView.findViewById(R.id.tvPhone)
+        private val ivFoto: ImageView = itemView.findViewById(R.id.ivPhoto)
+
+        fun bind(contact: Contact) {
+            tvNome.text = contact.name
+            tvFone.text = contact.phone
         }
     }
 }
