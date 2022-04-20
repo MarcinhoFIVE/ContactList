@@ -1,4 +1,10 @@
 <resources>
     <string name="app_name">ContactList</string>
-    <string name="foto_do_contato">Foto do Contato</string>
+    <string name="foto_do_contato">Foto do Contato</string>D
+
+    <string name="menu_1">Menu 1</string>
+    <string name="menu_2">Menu 2</string>
+
+    <string name="open_drawer">Abrir</string>
+    <string name="close_drawer">Fechar</string>
 </resources>
