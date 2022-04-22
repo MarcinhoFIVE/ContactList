@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ContactList.iml" filepath="$PROJECT_DIR$/.idea/modules/ContactList.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/ContactList.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/ContactList.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/BootcampKotlin.iml" filepath="$PROJECT_DIR$/.idea/modules/BootcampKotlin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/BootcampKotlin.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/BootcampKotlin.app.iml" />
     </modules>
   </component>
 </project>

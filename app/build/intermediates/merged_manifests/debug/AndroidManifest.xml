@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="br.mdan.contactlist"
+    package="br.com.bootcampkotlin"
     android:versionCode="1"
     android:versionName="1.0" >
 
     <uses-sdk
         android:minSdkVersion="16"
-        android:targetSdkVersion="32" />
+        android:targetSdkVersion="29" />
 
     <application
         android:allowBackup="true"
@@ -17,35 +17,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:testOnly="true"
-        android:theme="@style/Theme.ContactList" >
-
-        <!--
-            activity
-            android:name=".ContactDetail"
-            android:exported="false" /
-        -->
-        <activity
-            android:name="br.mdan.contactlist.MainActivity"
-            android:exported="true" >
+        android:theme="@style/ThemeBootcampKotlin" >
+        <activity android:name="br.com.bootcampkotlin.MainActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="br.mdan.contactlist.DetailActivity" />
-
-        <provider
-            android:name="androidx.startup.InitializationProvider"
-            android:authorities="br.mdan.contactlist.androidx-startup"
-            android:exported="false" >
-            <meta-data
-                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-                android:value="androidx.startup" />
-            <meta-data
-                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-                android:value="androidx.startup" />
-        </provider>
+        <activity android:name="br.com.bootcampkotlin.DetailActivity" />
     </application>
 
 </manifest>
