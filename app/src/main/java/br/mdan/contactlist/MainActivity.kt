@@ -55,6 +55,7 @@ class MainActivity : AppCompatActivity(), ClickItemContactListener {
         getInstanceSharedPreferences().edit {
             val json = Gson().toJson(list)
             putString("contacts", json)
+            commit()
         }
     }
 
