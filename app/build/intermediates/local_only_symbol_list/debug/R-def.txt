@@ -1,0 +1,36 @@
+R_DEF: Internal format may change without notice
+local
+color black
+color purple_200
+color purple_500
+color purple_700
+color red
+color teal_200
+color teal_700
+color white
+drawable ic_launcher_background
+drawable ic_launcher_foreground
+id drawLayout
+id item_menu_1
+id item_menu_2
+id ivPhoto
+id naviView
+id rvList
+id toolbar
+id tvName
+id tvPhone
+layout activity_main
+layout contact_detail
+layout contact_item
+layout drawer_menu
+menu menu
+mipmap ic_launcher
+mipmap ic_launcher_round
+string app_name
+string close_drawer
+string foto_do_contato
+string menu_1
+string menu_2
+string open_drawer
+style TextViewDefault
+style Theme.ContactList
